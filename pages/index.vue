@@ -52,7 +52,7 @@ export default {
     nextStep() {
       const stepDis = document.querySelectorAll(".step")[1].offsetLeft;
       this.activeStepper += 1;
-      // console.log(this.activeStepper);
+      
       if (this.activeStepper > this.steppers.length - 1) {
         this.steppers.forEach((item) => {
           item.status = null;
